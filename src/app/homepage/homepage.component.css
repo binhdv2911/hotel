@@ -36,7 +36,8 @@ position: relative;
 .history,
 .room-types,
 .royal-palace,
-.comment{
+.comment,
+.gallery{
   padding: 5rem 10rem;
 }
 .history>div>div:first-child{
@@ -120,6 +121,7 @@ position: relative;
   top: 10%;
   color: white;
   padding: 0.5rem 0.8rem;
+  box-shadow: 0px 0px 1px 1px rgb(110, 110, 110);
 }
 .room-types__img-content>div:nth-child(2){
   position: absolute;
@@ -177,4 +179,20 @@ position: relative;
 .bi-star-fill,
 .bi-star-half{
   color: orange;
+}
+.gallery{
+  background-color: var(--pastel-1);
+}
+.gallery__img>div>div>img{
+  width: 100%;
+  height: auto;
+}
+.gallery>div>p:nth-child(4){
+  font-family: 'Ysabeau', sans-serif;
+  font-weight: 300;
+  font-style: italic;
+  font-size: 1.2rem;
+}
+iframe{
+  width: 100%;
 }

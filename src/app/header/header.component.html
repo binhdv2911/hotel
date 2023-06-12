@@ -5,5 +5,40 @@
     <a href="">about us</a>
     <a href="">rooms</a>
     <a href="">news</a>
+    <div class="dropdown">
+      <button
+        class="dropdown-toggle"
+        type="button"
+        id="dropdownMenuButton1"
+        data-bs-toggle="dropdown"
+        aria-expanded="false"
+        *ngIf="userInformation"
+      >
+        {{ userInformation }}
+      </button>
+      <a
+        class="btn-login"
+        id="dropdownMenuButton1"
+        data-bs-toggle="dropdown"
+        aria-expanded="false"
+        routerLink="/manage-account/login"
+        *ngIf="!userInformation"
+      >
+        LOGIN
+      </a>
+      <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+        <li>
+          <a
+            class="dropdown-item"
+            (click)="clearStorage()"
+            routerLink="/homepage"
+            *ngIf="userInformation"
+            >Logout</a
+          >
+        </li>
+
+        <li><a class="dropdown-item" href="#">View Profile</a></li>
+      </ul>
+    </div>
   </div>
 </nav>

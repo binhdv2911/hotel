@@ -1,1 +1,5 @@
-<p>login works!</p>
+<form [formGroup]="loginForm" (submit)="onSubmit()">
+  <input type="text" formControlName="UserName" />
+  <input type="password" formControlName="PassWord" />
+  <button>lgoin</button>
+</form>

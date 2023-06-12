@@ -19,3 +19,25 @@ nav>img{
   text-transform:uppercase;
   color: var(--pastel-6);
 }
+
+.dropdown{
+  padding-left:5rem;
+}
+.dropdown>button{
+  border: 0;
+  color: var(--pastel-6);
+  background-color:white;
+}
+.btn-login{
+  border:1px solid var(--pastel-6);
+  border-radius:5px;
+  padding:10px;
+  text-decoration:none;
+  color: var(--pastel-6)
+
+}
+
+.btn-login:hover{
+  color:white;
+  background-color: var(--pastel-6);
+}

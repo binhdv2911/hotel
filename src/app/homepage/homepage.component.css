@@ -1,0 +1,180 @@
+.hero{
+position: relative;
+}
+.hero__content{
+  position: absolute;
+  top:50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  color: white;
+}
+.hero>img{
+  width:100%;
+  filter: brightness(50%);
+}
+
+.hero__content>p:not(p:nth-child(4)){
+  font-family: 'Times New Roman', Times, serif;
+  line-height: 3rem;
+}
+.hero__content>p:nth-child(3){
+  color: var(--pastel-4);
+}
+.hero__content>p:nth-child(4){
+  font-family: 'Ysabeau', sans-serif;
+  font-weight: 200;
+  font-size: 1.2rem;
+  padding: 0 7rem;
+}
+.hero__content>p:nth-child(1){
+  font-size: 1.5rem;
+  color: var(--pastel-3);
+}
+.hero__content>p:nth-child(2){
+  font-size: 5rem;
+}
+.history,
+.room-types,
+.royal-palace,
+.comment{
+  padding: 5rem 10rem;
+}
+.history>div>div:first-child{
+  position: relative;
+}
+.history-num{
+  padding: 0.5rem 1rem;
+  background-color: rgba(20,20,20,0.8);
+  position: absolute;
+  top: 60%;
+  left:-12%;
+  color: white;
+  font-family: 'Ysabeau', sans-serif;
+  line-height: 1rem;
+}
+.history-num>p:nth-child(1){
+  font-size: 2rem;
+}
+.history-num>p:nth-child(2){
+  font-size: 1.2rem;
+}
+.history-num>p>span{
+  color: var(--pastel-3);
+  font-size: 3rem;
+}
+.b-start-color{
+  border-color: var(--pastel-5) !important;
+}
+.hotel-title>p:nth-child(1){
+  color: var(--pastel-3);
+  font-size: 1rem;
+}
+.hotel-title>p:nth-child(3){
+  color: var(--pastel-5);
+  font-size: 1rem;
+}
+.hotel-title{
+  line-height: 2.5rem;
+}
+.hotel-title,.royal-palace__content-text>p:nth-child(1),
+.hotel-title>p:nth-child(2),.bilury__content>p:nth-child(1){
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 2.5rem;
+}
+.hotel-title__content,.bilury__content>p:nth-child(3){
+  padding: 0 5em;
+  font-family: 'Ysabeau', sans-serif;
+  font-weight: 200;
+  font-size: 1.2rem;
+}
+.history>div>div:nth-child(2)>p{
+  font-family: 'Ysabeau', sans-serif;
+  font-weight: 200;
+  font-size: 1.2rem;
+}
+.box{
+  border: 1px solid var(--pastel-3);
+  padding: 1rem;
+  font-family: 'Ysabeau', sans-serif;
+  font-weight: 200;
+}
+.box>div>p{
+  font-size: 1.3rem;
+}
+.bi-buildings,
+.bi-box-seam{
+  color: var(--pastel-4);
+  font-size: 2rem;
+  margin-right: 1rem;
+}
+.room-types{
+  background-color: var(--pastel-1);
+  font-family: 'Ysabeau', sans-serif;
+}
+.room-types__img>div>img{
+  width: 100%;
+}
+.room-types__img-content>p:nth-child(1){
+  background-color: var(--pastel-3);
+  position: absolute;
+  top: 10%;
+  color: white;
+  padding: 0.5rem 0.8rem;
+}
+.room-types__img-content>div:nth-child(2){
+  position: absolute;
+  top: 80%;
+  color: white;
+  left: 10%;
+  font-size: 1.2rem;
+  line-height: 1rem;
+}
+.royal-palace__content>div>div>img{
+  width: 100%;
+}
+.royal-palace__content-text>p:nth-child(1){
+  line-height: 1.8rem;
+}
+.royal-palace__content-text>p:nth-child(1)>span,
+.bilury__content>p:nth-child(2){
+  color: var(--pastel-3);
+}
+.royal-palace__content-text>p:nth-child(2){
+  font-family: 'Ysabeau', sans-serif;
+  font-weight: 200;
+  font-size: 1.2rem;
+}
+.royal-palace__content-text>p:nth-child(2),.hotel-title__content{
+  line-height: 1.6rem;
+}
+.bilury>img{
+  width: 100%;
+  object-position: center;
+  object-fit: contain;
+  filter: brightness(50%);
+}
+.bilury{
+  position: relative;
+  color: white;
+}
+.bilury__content{
+  position: absolute;
+  top:50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+.comment__cotent>div>div>img{
+  width: 130px;
+  height: 130px;
+  object-fit: cover;
+}
+.comment__cotent>div>div{
+  line-height: 2rem;
+  font-family: 'Ysabeau', sans-serif;
+  font-weight: 200;
+  font-size: 1.2rem;
+}
+.bi-star-fill,
+.bi-star-half{
+  color: orange;
+}

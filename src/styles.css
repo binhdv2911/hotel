@@ -1,1 +1,20 @@
 /* You can add global styles to this file, and also import other style files */
+@import "~bootstrap-icons/font/bootstrap-icons.css";
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@1,200;1,300&family=Ysabeau:wght@100;200;300;400;500;600&display=swap');
+
+:root{
+  --pastel-1:#fcf7f0;
+  --pastel-2:#e2bd8e;
+  --pastel-3:#dba765;
+  --pastel-4:#d69846;
+  --pastel-5:#be781c;
+  --pastel-6:#8e560c;
+  --pastel-7:#573508;
+}
+.btn-pastel{
+  background-color: var(--pastel-4);
+  color: white;
+  padding: 0.2rem 1rem;
+  border: none;
+  font-size: 1rem;
+}

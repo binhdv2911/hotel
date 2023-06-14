@@ -1,18 +1,10 @@
 .hero{
 position: relative;
 }
-.hero__content{
-  position: absolute;
-  top:50%;
-  left: 50%;
-  transform: translate(-50%,-50%);
-  color: white;
-}
 .hero>img{
   width:100%;
   filter: brightness(50%);
 }
-
 .hero__content>p:not(p:nth-child(4)){
   font-family: 'Times New Roman', Times, serif;
   line-height: 3rem;
@@ -32,13 +24,6 @@ position: relative;
 }
 .hero__content>p:nth-child(2){
   font-size: 5rem;
-}
-.history,
-.room-types,
-.royal-palace,
-.comment,
-.gallery{
-  padding: 5rem 10rem;
 }
 .history>div>div:first-child{
   position: relative;
@@ -63,41 +48,21 @@ position: relative;
   color: var(--pastel-3);
   font-size: 3rem;
 }
-.b-start-color{
-  border-color: var(--pastel-5) !important;
-}
-.hotel-title>p:nth-child(1){
-  color: var(--pastel-3);
-  font-size: 1rem;
-}
-.hotel-title>p:nth-child(3){
-  color: var(--pastel-5);
-  font-size: 1rem;
-}
+
 .hotel-title{
   line-height: 2.5rem;
 }
-.hotel-title,.royal-palace__content-text>p:nth-child(1),
-.hotel-title>p:nth-child(2),.bilury__content>p:nth-child(1){
-  font-family: 'Times New Roman', Times, serif;
-  font-size: 2.5rem;
-}
-.hotel-title__content,.bilury__content>p:nth-child(3){
+.hotel-title__content,
+.bilury__content>p:nth-child(3){
   padding: 0 5em;
-  font-family: 'Ysabeau', sans-serif;
-  font-weight: 200;
   font-size: 1.2rem;
 }
 .history>div>div:nth-child(2)>p{
-  font-family: 'Ysabeau', sans-serif;
-  font-weight: 200;
   font-size: 1.2rem;
 }
 .box{
   border: 1px solid var(--pastel-3);
   padding: 1rem;
-  font-family: 'Ysabeau', sans-serif;
-  font-weight: 200;
 }
 .box>div>p{
   font-size: 1.3rem;
@@ -112,9 +77,7 @@ position: relative;
   background-color: var(--pastel-1);
   font-family: 'Ysabeau', sans-serif;
 }
-.room-types__img>div>img{
-  width: 100%;
-}
+
 .room-types__img-content>p:nth-child(1){
   background-color: var(--pastel-3);
   position: absolute;
@@ -131,7 +94,11 @@ position: relative;
   font-size: 1.2rem;
   line-height: 1rem;
 }
-.royal-palace__content>div>div>img{
+iframe,
+.room-types__img>div>img,
+.history>div>div>img,
+.gallery__img>div>div>img
+{
   width: 100%;
 }
 .royal-palace__content-text>p:nth-child(1){
@@ -142,8 +109,6 @@ position: relative;
   color: var(--pastel-3);
 }
 .royal-palace__content-text>p:nth-child(2){
-  font-family: 'Ysabeau', sans-serif;
-  font-weight: 200;
   font-size: 1.2rem;
 }
 .royal-palace__content-text>p:nth-child(2),.hotel-title__content{
@@ -159,12 +124,6 @@ position: relative;
   position: relative;
   color: white;
 }
-.bilury__content{
-  position: absolute;
-  top:50%;
-  left: 50%;
-  transform: translate(-50%,-50%);
-}
 .comment__cotent>div>div>img{
   width: 130px;
   height: 130px;
@@ -172,8 +131,6 @@ position: relative;
 }
 .comment__cotent>div>div{
   line-height: 2rem;
-  font-family: 'Ysabeau', sans-serif;
-  font-weight: 200;
   font-size: 1.2rem;
 }
 .bi-star-fill,
@@ -183,16 +140,12 @@ position: relative;
 .gallery{
   background-color: var(--pastel-1);
 }
-.gallery__img>div>div>img{
-  width: 100%;
-  height: auto;
-}
 .gallery>div>p:nth-child(4){
   font-family: 'Ysabeau', sans-serif;
   font-weight: 300;
   font-style: italic;
   font-size: 1.2rem;
 }
-iframe{
-  width: 100%;
+.num_year{
+  line-height: 3rem;
 }

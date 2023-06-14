@@ -1,0 +1,43 @@
+.hero{
+  position: relative;
+}
+.hero>img:nth-child(1){
+  width: 100%;
+  /* filter: brightness(50%); */
+}
+.hero__content{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  color:white;
+  font-size: 2.5rem;
+  font-family: 'Times New Roman', Times, serif;
+}
+.news>p:nth-child(1){
+  font-size: 1.2rem;
+  color: var(--pastel-3);
+}
+.news>div:nth-child(2)>div>.news__content{
+  box-shadow: 0px 0px 2px 2px rgba(175, 175, 175, 0.8);
+}
+.news__content{
+  font-family: 'Times New Roman', Times, serif;
+}
+.news__content>img{
+  height: 28vh;
+  object-fit: cover;
+}
+.news__content>div{
+  padding: 1.5rem 1rem 9rem 1rem;
+}
+.news__content>div>p:nth-child(1){
+  font-size: 2rem;
+}
+.news__content>div>p:nth-child(2){
+  font-size: 1.2rem;
+}
+.carousel-item>img{
+  height: 70vh;
+  object-fit: cover;
+}

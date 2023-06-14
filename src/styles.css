@@ -18,3 +18,36 @@
   border: none;
   font-size: 1rem;
 }
+.p-layout{
+  padding: 5rem 10rem;
+}
+.f-Ysabeau-200{
+  font-family: 'Ysabeau', sans-serif;
+  font-weight: 200;
+}
+.f-Times-title{
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 2.5rem;
+}
+.pos-center{
+  position: absolute;
+  top:50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+.hotel-title>p:nth-child(1){
+  color: var(--pastel-3);
+  font-size: 1rem;
+  margin-bottom: 2rem !important;
+
+}
+.hotel-title>p:nth-child(3){
+  color: var(--pastel-3);
+  font-size: 1rem;
+}
+.hotel-title{
+  line-height: 1.5rem !important;
+}
+.b-start-color{
+  border-color: var(--pastel-5) !important;
+}

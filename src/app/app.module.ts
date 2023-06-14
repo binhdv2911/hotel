@@ -10,6 +10,8 @@ import { ManageAccountComponent } from './manage-account/manage-account.componen
 import { LoginComponent } from './manage-account/login/login.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
+import { AboutUsComponent } from './about-us/about-us.component';
+import { NewsComponent } from './news/news.component';
 
 @NgModule({
   declarations: [
@@ -19,6 +21,8 @@ import { HttpClientModule } from '@angular/common/http';
     HomepageComponent,
     ManageAccountComponent,
     LoginComponent,
+    AboutUsComponent,
+    NewsComponent,
   ],
   imports: [
     BrowserModule,

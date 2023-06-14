@@ -6,7 +6,7 @@ nav{
   background-color: white;
   font-family: 'Times New Roman', Times, serif;
 }
-nav>img{
+nav>a>img{
   width: 130px;
   position:absolute;
   top:0;
@@ -23,7 +23,7 @@ nav>img{
 .dropdown{
   padding-left:5rem;
 }
-.dropdown>button{
+.dropdown>.btn-logged{
   border: 0;
   color: var(--pastel-6);
   background-color:white;
@@ -31,13 +31,21 @@ nav>img{
 .btn-login{
   border:1px solid var(--pastel-6);
   border-radius:5px;
-  padding:10px;
   text-decoration:none;
-  color: var(--pastel-6)
-
+  color: var(--pastel-6);
+background-color:white;
 }
 
 .btn-login:hover{
   color:white;
   background-color: var(--pastel-6);
+}
+::ng-deep .modal-backdrop{
+  z-index: initial !important;
+}
+.modal-content__header--btn{
+  position: absolute;
+  z-index: 1;
+  top: 10px;
+  right: 10px;
 }

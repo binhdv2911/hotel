@@ -1,13 +1,13 @@
 <nav class="position-sticky align-items-center border-bottom border-1">
-  <img src="../../assets/nav_logo.jpeg" alt="" />
+  <a routerLink="/homepage"><img src="../../assets/nav_logo.jpeg" alt="" /></a>
   <div class="nav__item py-3 d-flex justify-content-end">
-    <a href="">home</a>
-    <a href="">about us</a>
+    <a href="" routerLink="/homepage">home</a>
+    <a routerLink="/about-us">about us</a>
     <a href="">rooms</a>
-    <a href="">news</a>
+    <a routerLink="/news">news</a>
     <div class="dropdown">
       <button
-        class="dropdown-toggle"
+        class="dropdown-toggle btn-logged"
         type="button"
         id="dropdownMenuButton1"
         data-bs-toggle="dropdown"
@@ -16,16 +16,73 @@
       >
         {{ userInformation }}
       </button>
-      <a
+      <button
+        type="button"
         class="btn-login"
-        id="dropdownMenuButton1"
-        data-bs-toggle="dropdown"
-        aria-expanded="false"
-        routerLink="/manage-account/login"
+        data-bs-toggle="modal"
+        data-bs-target="#staticBackdrop"
         *ngIf="!userInformation"
       >
         LOGIN
-      </a>
+      </button>
+      <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+        <div
+          class="modal fade"
+          id="staticBackdrop"
+          data-bs-backdrop="static"
+          data-bs-keyboard="false"
+          tabindex="-1"
+          aria-labelledby="staticBackdropLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content p-3">
+              <div class="modal-content__header">
+                <h5 class="modal-title text-center" id="staticBackdropLabel">
+                  ACCOUNT SIGN IN
+                </h5>
+                <div class="modal-content__header--btn">
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  ></button>
+                </div>
+              </div>
+              <div class="modal-body">
+                <p class="text-center">
+                  Sign in with your username and password.
+                </p>
+                <div class="form-group mb-2">
+                  <input
+                    type="text"
+                    formControlName="UserName"
+                    class="form-control"
+                    placeholder="Username"
+                  />
+                </div>
+                <div class="form-group">
+                  <input
+                    type="password"
+                    formControlName="PassWord"
+                    class="form-control"
+                    placeholder="Password"
+                  />
+                </div>
+              </div>
+              <div class="modal-footer justify-content-center">
+                <button type="submit" class="btn btn-primary">Login</button>
+              </div>
+              <div class="text-center">
+                <p>No account? Save time on your next booking.</p>
+                <a href="">SIGN UP</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </form>
+
       <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
         <li>
           <a
